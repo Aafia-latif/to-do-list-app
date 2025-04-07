@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animated To-Do App</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
 </head>
@@ -12,12 +15,18 @@
 <body>
     <div class="container">
         <div class="todo-app">
-            <h1>My To-Do List ✍️</h1>
-            <div class="input-group">
-                <input type="text" id="task-input" placeholder="Enter your task..." />
-                <button id="add-btn">Add</button>
+            <h1>To-Do List ✍️</h1>
+            <form action="" class="input-area">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <button type="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
+            </form>
+            <div class="todos-container">
+                <ul id="task-list">
+                    <!-- Task list will be dynamically added here -->
+                </ul>
+                <!-- <img class="empty-image" src="./assets/images/notebook-agenda.svg" alt="empty"> -->
+                <img class="empty-image" src="./assets/images/task.svg" alt="empty">
             </div>
-            <ul id="task-list"></ul>
         </div>
     </div>
 </body>
